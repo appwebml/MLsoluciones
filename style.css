@@ -40,7 +40,7 @@ header {
     padding: 0.75rem 0;
 }
 
-/* Contenedor de la Marca: Forzado estrictamente en fila horizontal */
+/* Contenedor de la Marca */
 .brand-container .logo-link {
     display: flex;
     flex-direction: row;
@@ -50,7 +50,7 @@ header {
     white-space: nowrap;
 }
 
-/* Tamaño controlado del logotipo */
+/* Logotipo */
 .logo-img {
     height: 42px;
     width: auto;
@@ -168,7 +168,7 @@ nav ul li a:hover {
 /* Servicios Grid */
 .services-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
     margin-top: 2rem;
 }
@@ -219,4 +219,54 @@ footer {
     text-align: center;
     padding: 1.5rem 0;
     font-size: 0.9rem;
+}
+
+/* ==========================================
+   MEDIA QUERIES (ADAPTABILIDAD MÓVIL)
+   ================================---------- */
+
+@media (max-width: 768px) {
+    /* Barra de navegación en móviles: se apila o reduce espacios */
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+        padding: 1rem 0;
+    }
+
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li a {
+        font-size: 0.9rem;
+    }
+
+    /* Ajuste de textos principales para pantallas pequeñas */
+    .hero {
+        padding: 3rem 1rem;
+    }
+
+    .hero-content h2 {
+        font-size: 1.6rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .section {
+        padding: 3rem 0;
+    }
+
+    .section h3 {
+        font-size: 1.6rem;
+    }
+
+    /* Las tarjetas de servicios se acomodan a una columna */
+    .services-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
 }
