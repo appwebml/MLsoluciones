@@ -40,24 +40,33 @@ header {
     padding: 0.75rem 0;
 }
 
-/* Contenedor de la Marca (Logo + Texto) */
+/* Contenedor de la Marca: Forzado estrictamente en fila horizontal (al lado) */
 .brand-container a.logo-link {
     display: flex;
+    flex-direction: row;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
     text-decoration: none;
+    white-space: nowrap;
 }
 
 /* Tamaño controlado del logotipo */
 .logo-img {
-    height: 45px;
+    height: 42px;
     width: auto;
     object-fit: contain;
+    display: block;
 }
 
-/* Estilo forzado y visible del texto corporativo */
+/* Estilo del texto corporativo al lado del logo */
+.logo-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .logo-text h1 {
-    font-size: 1.15rem;
+    font-size: 1.05rem;
     color: #0b2545 !important;
     font-weight: 700;
     line-height: 1.1;
@@ -69,7 +78,7 @@ header {
 }
 
 .logo-text p {
-    font-size: 0.55rem;
+    font-size: 0.5rem;
     letter-spacing: 2px;
     color: #0b2545 !important;
     font-weight: 600;
