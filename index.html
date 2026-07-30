@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ML Soluciones Integrales | Servicios Industriales</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container navbar">
+            <div class="logo-text">
+                <h1>ML <span>SOLUCIONES</span></h1>
+                <p>INTEGRALES</p>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#inicio">Inicio</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="inicio" class="hero">
+        <div class="container hero-content">
+            <h2>Compromiso y Alianza Estratégica para la Industria</h2>
+            <p>Ofrecemos soluciones integrales con altos estándares de calidad, seguridad y eficiencia operativa.</p>
+            <a href="#contacto" class="btn">Contáctanos</a>
+        </div>
+    </section>
+
+    <section id="nosotros" class="section">
+        <div class="container">
+            <h3>¿Quiénes Somos?</h3>
+            <p class="section-desc">En <strong>ML Soluciones Integrales</strong> nos especializamos en brindar soporte y optimización a procesos industriales, priorizando el trabajo en equipo y el respaldo constante a nuestros clientes.</p>
+        </div>
+    </section>
+
+    <section id="servicios" class="section bg-light">
+        <div class="container">
+            <h3>Nuestros Servicios Industriales</h3>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h4>Mantenimiento Industrial</h4>
+                    <p>Preventivo y correctivo para asegurar la continuidad operativa de tus equipos.</p>
+                </div>
+                <div class="service-card">
+                    <h4>Optimización de Procesos</h4>
+                    <p>Análisis y mejora continua para maximizar la productividad y eficiencia.</p>
+                </div>
+                <div class="service-card">
+                    <h4>Soporte Técnico Especializado</h4>
+                    <p>Asistencia profesional calificada para resolver desafíos operativos complejos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="section">
+        <div class="container">
+            <h3>Ponte en Contacto</h3>
+            <p class="section-desc">¿Listo para impulsar tu proyecto? Escríbenos y conversemos sobre tus necesidades.</p>
+            
+            <form id="contactForm" class="contact-form" onsubmit="enviarFormulario(event)">
+                <input type="text" id="nombre" placeholder="Tu Nombre o Empresa" required>
+                <input type="email" id="email" placeholder="Correo Electrónico" required>
+                <textarea id="mensaje" rows="5" placeholder="¿Cómo podemos ayudarte?" required></textarea>
+                <button type="submit" class="btn">Enviar Mensaje</button>
+            </form>
+            <p id="form-msg" class="success-msg"></p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 ML Soluciones Integrales. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
