@@ -40,12 +40,12 @@ header {
     padding: 0.75rem 0;
 }
 
-/* Contenedor de la Marca: Forzado estrictamente en fila horizontal (al lado) */
-.brand-container a.logo-link {
+/* Contenedor de la Marca: Forzado estrictamente en fila horizontal */
+.brand-container .logo-link {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
     text-decoration: none;
     white-space: nowrap;
 }
@@ -55,34 +55,35 @@ header {
     height: 42px;
     width: auto;
     object-fit: contain;
-    display: block;
+    display: inline-block;
+    vertical-align: middle;
 }
 
-/* Estilo del texto corporativo al lado del logo */
-.logo-text {
-    display: flex;
+/* Grupo de texto al lado del logo */
+.logo-text-group {
+    display: inline-flex;
     flex-direction: column;
     justify-content: center;
+    vertical-align: middle;
 }
 
-.logo-text h1 {
+.logo-title {
     font-size: 1.05rem;
     color: #0b2545 !important;
     font-weight: 700;
     line-height: 1.1;
-    margin: 0;
 }
 
-.logo-text h1 span {
+.logo-title span {
     color: #00b4d8 !important;
 }
 
-.logo-text p {
+.logo-subtitle {
     font-size: 0.5rem;
     letter-spacing: 2px;
     color: #0b2545 !important;
     font-weight: 600;
-    margin: 0;
+    margin-top: 2px;
 }
 
 /* Menú de navegación */
