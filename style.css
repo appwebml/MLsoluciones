@@ -190,3 +190,15 @@ footer {
     padding: 1.5rem 0;
     font-size: 0.9rem;
 }
+/* Estilos para asegurar que el logo se visualice correctamente */
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-img {
+    height: 50px; /* Ajusta este valor si lo prefieres más grande o pequeño */
+    width: auto;
+    object-fit: contain;
+    display: block;
+}
